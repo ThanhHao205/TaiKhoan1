@@ -18,6 +18,22 @@
                                     @endif
                                 </div>
 
+                                <div class="form-group mb-3">
+                                    <label for="name" class="form-label" style="font-weight: 600;">Name</label>
+                                    <input type="text" placeholder="Enter your age" id="age" class="form-control rounded-pill" name="age" required autofocus>
+                                    @if ($errors->has('age'))
+                                        <span class="text-danger" style="font-size: 0.9rem;">{{ $errors->first('age') }}</span>
+                                    @endif
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="name" class="form-label" style="font-weight: 600;">Name</label>
+                                    <input type="text" placeholder="Enter your facebook" id="age" class="form-control rounded-pill" name="facebook" required autofocus>
+                                    @if ($errors->has('facebook'))
+                                        <span class="text-danger" style="font-size: 0.9rem;">{{ $errors->first('facebook') }}</span>
+                                    @endif
+                                </div>
+
                                 <!-- <div class="form-group mb-3">
                                     <label for="name" class="form-label" style="font-weight: 600;">Phone</label>
                                     <input type="text" placeholder="Enter your phone" id="Phone" class="form-control rounded-pill" name="phone" required autofocus>

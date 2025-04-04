@@ -19,6 +19,22 @@
                                 @endif
                             </div>
 
+                            <div class="form-group mb-3">
+                                <input type="text" placeholder="Name" id="age" class="form-control" name="age"
+                                       value="{{ $user->age }}" required autofocus>
+                                @if ($errors->has('age'))
+                                    <span class="text-danger">{{ $errors->first('age') }}</span>
+                                @endif
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <input type="text" placeholder="Name" id="facebook" class="form-control" name="facebook"
+                                       value="{{ $user->facebook }}" required autofocus>
+                                @if ($errors->has('facebook'))
+                                    <span class="text-danger">{{ $errors->first('facebook') }}</span>
+                                @endif
+                            </div>
+
                             <!-- <div class="form-group mb-3">
                                     <input type="text" placeholder="Name" id="phone" class="form-control" name="phone"
                                            value="{{ $user->phone }}"
